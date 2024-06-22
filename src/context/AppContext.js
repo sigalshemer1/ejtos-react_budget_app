@@ -44,7 +44,6 @@ export const AppReducer = (state, action) => {
                     expenses: [...red_expenses],
                 };
             case 'DELETE_EXPENSE':
-                console.log("delete");
             action.type = "DONE";
             state.expenses.map((currentExp)=> {
                 if (currentExp.name === action.payload) {
@@ -59,10 +58,10 @@ export const AppReducer = (state, action) => {
                 budget
             };
         case 'SET_BUDGET':
-            console.log("set budget");
+            console.log('set budget');
             action.type = "DONE";
             state.budget = action.payload;
-
+            console.log("state - ");
             return {
                 ...state,
             };
