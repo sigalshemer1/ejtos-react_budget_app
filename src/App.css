@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.curTxt{
+    float:right;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.inputMoney{
+    float:right;
+}

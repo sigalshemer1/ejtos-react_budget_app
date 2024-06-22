@@ -30,7 +30,7 @@ const ExpenseItem = (props) => {
     return (
         <tr>
             <td>{props.name}</td>
-            <td>£{props.cost}</td>
+            <td>{props.currency }{props.cost}</td>
             <td>
             <IconContext.Provider value={{ color: "green", className: "global-class-name" }}>
                 <div>
